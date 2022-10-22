@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Vote mga Vadengs!",
+    "description": "Autoclicker and refresher for voting Darlentina in the Nylon magazine poll",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "darlentina.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+      },
+    "permissions": [
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "http://*/",
+      "https://*/"
+    ]
+  }
